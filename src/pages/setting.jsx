@@ -47,19 +47,18 @@ export function Settings() {
         <div className="absolute w-96 h-96 bg-green-500/10 rounded-full blur-3xl bottom-10 right-10"></div>
       </div>
 
-      {/* Top card: Email with Logout button */}
+      {/* Top card: Email with Logout button below */}
       <Card className="bg-green-400/20 border border-green-400/30 backdrop-blur-xl shadow-xl shadow-green-900/20 hover:shadow-green-700/50 transition w-full">
-        <CardContent className="flex items-center justify-between py-6">
-          {/* left side email text */}
+        <CardContent className="flex flex-col items-start py-6 gap-4">
           <div>
-            <h2 className="text-green-400 text-left text-2xl">Your Email</h2>
-            <p className="text-green-100 text-left text-lg mt-1">{email}</p>
+            <h2 className="text-green-400 text-2xl">Your Email</h2>
+            <p className="text-green-100 text-lg mt-1">{email}</p>
           </div>
 
-          {/* logout button right side */}
+          {/* Logout button below */}
           <Button
             onClick={handleLogout}
-            className="px-4 py-2 text-sm font-semibold bg-red-500/70 hover:bg-red-600/70 border border-red-400/40 rounded-xl backdrop-blur-md shadow-lg shadow-red-900/30"
+            className="self-center sm:self-start px-4 py-2 text-sm font-semibold bg-red-500/70 hover:bg-red-600/70 border border-red-400/40 rounded-xl backdrop-blur-md shadow-lg shadow-red-900/30"
           >
             Logout
           </Button>

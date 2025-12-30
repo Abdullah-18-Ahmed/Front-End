@@ -67,7 +67,7 @@ export function Donate() {
   );
 
   return (
-    <div className="flex min-h-screen w-full items-center justify-center bg-gradient-to-br from-slate-900 via-blue-950 to-blue-900 relative p-4">
+    <div className="flex min-h-screen w-full items-center justify-center relative p-4">
       <Card className="w-full max-w-lg bg-green-400/20 backdrop-blur-xl border border-green-400/30 shadow-xl shadow-green-900/20">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold text-green-400">Donate</CardTitle>
